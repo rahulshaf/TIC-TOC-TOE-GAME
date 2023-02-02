@@ -93,7 +93,8 @@ h1{
     font-size: 50px;
     background-color: rgba(0,0,100,0.5);
     padding:1% 2%;
-    border-radius: 20px;
+    border-radius: 20px; 
+    text-align:center;
 }
 button{
     font-size: 25px;
