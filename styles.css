@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0;
+    margin:0;
+    background-color:#FFFBF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+
+}
+.players{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    border:2px solid #674188;
+    max-width: 300px;
+    border-radius:15px;
+    font-size: 20px;
+    font-weight:10px;
+
+}
+.players div{
+    padding: 20px;
+    color:#674188;
+
+}
+
+
+.players .active{
+    background-color: #674188;
+    color:white;
+    border: 2px solid white;
+    border-radius: 15px;;
+}
+.game-board{
+    margin-top: 3%;
+display:grid;
+grid-template-columns: repeat(3,auto);
+}
+.cells{
+    height:100px;
+    width:100px;
+    border:2px solid #674188;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.O{
+    color:red;
+}
+.X{
+    color:blue;
+}
+.cells:nth-child(1),.cells:nth-child(2),.cells:nth-child(3){
+    border-top:none;
+}
+.cells:nth-child(1),.cells:nth-child(4),.cells:nth-child(7){
+    border-left:none;
+}
+.cells:nth-child(7),.cells:nth-child(8),.cells:nth-child(9){
+    border-bottom:none;
+}
+.cells:nth-child(3),.cells:nth-child(6),.cells:nth-child(9){
+    border-right:none;
+}
+
+.result{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+h1{
+    color:white;
+    font-size: 50px;
+    background-color: rgba(0,0,100,0.5);
+    padding:1% 2%;
+    border-radius: 20px;
+}
+button{
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: #674188;
+    color:white;
+    border-radius: 10px;
+    
+
+}
+
+.inactive{
+    display: none;
+}
+.disabled{
+pointer-events: none;;
+}
+.highlight{
+    background-color:#cfb2e9;
+    color: white;
+}
